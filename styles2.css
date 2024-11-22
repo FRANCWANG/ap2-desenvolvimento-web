@@ -1,0 +1,40 @@
+body {
+  background-color:white;
+  color: black;
+  overflow-x: hidden;
+}
+#container{
+  display: grid;
+  gap:30px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+article{
+  background-color: gray;
+  height: fit-content;
+}
+@media (max-width: 768px) {
+  #container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1300px) {
+  #container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1301px) {
+  #container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+}

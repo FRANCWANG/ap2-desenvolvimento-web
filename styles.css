@@ -1,0 +1,63 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:white;
+  color:black;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container, #athlete-list, #details-container {
+  max-width: 1400px;
+
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#voltar{ 
+  font-size: 2rem
+  } 
+main {
+  display: grid;
+  gap: 20px;
+}
+  
+  @media (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    main {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1300px) {
+    main {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (min-width: 1301px) {
+    main {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  img {
+    width: 150px;
+    height: auto; /* Mantém a proporção */
+  }
+  
+  
